@@ -89,7 +89,8 @@
 .header__trustTable {
   margin-top: 15px;
   display: grid;
-  column-gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
   row-gap: 17px;
   grid-template-columns: repeat(6, 1fr);
 }
@@ -109,6 +110,17 @@
   white-space: nowrap;
 }
 
+@media (max-width: 1084px) {
+  .header__info {
+    max-width: 50%;
+  }
+  .header__title {
+    font-size: 32px;
+  }
+  .header__text {
+    font-size: 16px;
+  }
+}
 @media (max-width: 700px) {
   .nav {
     display: flex;
@@ -138,6 +150,4 @@
   .header {
     background-position-x: -860px;
   }
-}
-
-/*# sourceMappingURL=02_header.css.map */
+}/*# sourceMappingURL=02_header.css.map */

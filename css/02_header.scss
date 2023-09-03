@@ -99,6 +99,17 @@
   white-space: nowrap;
 }
 
+@media (max-width: 1084px){  // 542px * 2
+  .header__info {
+    max-width: 50%;
+  }
+  .header__title{
+    font-size: 32px;
+  }
+  .header__text{
+    font-size: 16px;
+  }
+}
 @media (max-width: 700px){
   .nav{
     display: flex;
