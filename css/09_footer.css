@@ -9,7 +9,8 @@
 
 .footer__topColumns {
   display: grid;
-  grid-template-columns: 197px 197px 100px 1fr 173px;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 32px;
 }
 
 .footer__topColumns ul {
