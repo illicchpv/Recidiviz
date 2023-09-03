@@ -81,7 +81,8 @@
 .header__trustTable {
   margin-top: 15px;
   display: grid;
-  column-gap: 32px;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
   row-gap: 17px;
   grid-template-columns: repeat(6, 1fr);
 }
@@ -95,6 +96,4 @@
   font-size: 15px;
   line-height: 1.6; /* 160% */
   white-space: nowrap;
-}
-
-/*# sourceMappingURL=02_header.css.map */
+}/*# sourceMappingURL=02_header.css.map */
