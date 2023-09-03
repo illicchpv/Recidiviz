@@ -18,6 +18,7 @@
 }
 
 .footer__topColumn li {
+  white-space: nowrap;
   list-style-type: none;
   font-size: 15px;
   line-height: 2; /* 200% */
@@ -58,6 +59,26 @@
 
 .footer_infos div:first-child {
   margin-bottom: 8px;
+}
+
+@media (max-width: 640px) {
+  .footer__topColumnSpace {
+    display: none;
+  }
+  .footer__topColumns {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*
+  .header__hLine_h{
+    display: block;
+  }
+  .header__trustTable{
+    grid-template-columns: repeat(3,1fr);
+  }
+  .header__trustTable .header__hLine:nth-child(4), .header__trustTable .header__hLine:nth-child(5), .header__trustTable .header__hLine:nth-child(6){
+    display: none;
+  }
+  */
 }
 
 /*# sourceMappingURL=09_footer.css.map */
