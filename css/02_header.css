@@ -121,6 +121,9 @@
   }
 }
 @media (max-width: 640px) {
+  .header {
+    background-position-x: -700px;
+  }
   .header__hLine_h {
     display: block;
   }
@@ -129,6 +132,11 @@
   }
   .header__trustTable .header__hLine:nth-child(4), .header__trustTable .header__hLine:nth-child(5), .header__trustTable .header__hLine:nth-child(6) {
     display: none;
+  }
+}
+@media (max-width: 400px) {
+  .header {
+    background-position-x: -860px;
   }
 }
 
