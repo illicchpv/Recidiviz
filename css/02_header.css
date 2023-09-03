@@ -1,6 +1,6 @@
 .header {
   margin: 0 auto;
-  max-width: var(--containerWex);
+  max-width: var(--containerExW);
   min-height: 10vh;
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
@@ -10,6 +10,7 @@
 
 .container_header {
   padding-top: 17px;
+  padding-bottom: 40px;
   height: 100%;
 }
 
@@ -45,7 +46,7 @@
 .header__title {
   font-family: Libre Baskerville;
   font-size: 38px;
-  line-height: 1.15; /* 115.789% */
+  line-height: 1.15789; /* 115.789% */
   letter-spacing: 1.2px;
 }
 
@@ -53,7 +54,7 @@
   margin-top: 29px;
   margin-bottom: 46px;
   font-size: 18px;
-  line-height: 1.55; /* 155.556% */
+  line-height: 1.5556; /* 155.556% */
 }
 
 .header__button {
@@ -61,7 +62,7 @@
   text-align: center;
   font-family: Public Sans;
   font-size: 13px;
-  line-height: 1.53; /* 153.846% */
+  line-height: 1.53846; /* 153.846% */
   letter-spacing: 0.02px;
   color: white;
   text-decoration: none;
@@ -72,9 +73,6 @@
 
 .header__trust {
   margin-top: 139px;
-  bottom: 40px;
-  left: var(--contentInnerPadX);
-  right: var(--contentInnerPadX);
 }
 
 .header__trustIn {
