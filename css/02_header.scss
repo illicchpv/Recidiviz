@@ -3,15 +3,18 @@
   max-width: var(--containerWex);
   min-height: 10vh;
 
-  height: 776px;
+  // min-height: 776px;
   background-image: url(../img/bg.jpg);
   background-repeat: no-repeat;
-  // background-size: contain ;
-  background-position-x: center;
+  // // background-size: contain ;
+  // background-position-x: center;
+	background-position: center;
+	background-size: cover;
+
 }
 .container_header{
   padding-top: 17px;
-  position: relative;
+  // position: relative;
   height: 100%;
 }
 
@@ -33,6 +36,7 @@
 .menu__item{
   color: #fff;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .header__info{
@@ -67,8 +71,8 @@
 }
 
 .header__trust{
-  // margin-top: 139px;
-  position: absolute;
+  margin-top: 139px;
+  // position: absolute;
   bottom: 40px;
   left: var(--contentInnerPadX);
   right: var(--contentInnerPadX);
@@ -91,4 +95,5 @@
 .header__trustReg{
   font-size: 15px;
   line-height: 1.6; /* 160% */
+  white-space: nowrap;
 }
