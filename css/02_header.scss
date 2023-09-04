@@ -1,3 +1,5 @@
+@import "../css/00_mix";
+
 .header{
   margin: 0 auto;
   min-height: 10vh;
@@ -29,6 +31,9 @@
 .nav li{
   list-style: none;
 }
+.nav li:last-child{
+  margin-left: -30px;
+}
 .menu{
   font-size: 13px;
   display: flex;
@@ -58,17 +63,11 @@
   font-size: 18px;
   line-height: 1.5556; /* 155.556% */  
 }
-.header__button{
+.button_header{
   margin-top: 46px;
-  text-align: center;
-  font-size: 13px;
-  line-height: 1.53846; /* 153.846% */
-  letter-spacing: 0.02px;
   color: white;
-  text-decoration: none;
 
   padding: 17px 33px;
-  border-radius: 80px;
   border: 1px solid rgba(255, 255, 255, 0.30)
 }
 
@@ -100,6 +99,9 @@
 }
 
 @media (max-width: 1084px){  // 542px * 2
+  .nav li:last-child{
+    margin-left: 0;
+  }  
   .header__info {
     max-width: 50%;
   }
@@ -120,11 +122,26 @@
   .menu{
     gap: 5px;
   }
+  .header__info {
+    max-width: calc(100% - var(--contentInnerPadX)*2); // 
+  }    
+  .header__title{
+    // font-size: 32px;
+    @include vVal(font-size, 700px, 320px, 32px, 20px);
+  }
+  .header__text{
+    font-size: 16px;
+    @include vVal(font-size, 700px, 320px, 16px, 10px);
+  }
+
 }
 @media (max-width: 640px){ // перестраиваем гриды в header и footer
-  .header{
-    background-position-x: -700px;
-  }
+  // .header{
+  //   background-position-x: -700px;
+  //   // background-position-x: -436px;
+  //   // background-position-x: -1148px;
+  //   @include vVal(font-size, 640px, 320px, -436px, -1148px);
+  // }
   .header__hLine_h{
     display: block;
   }
@@ -136,7 +153,13 @@
   }
 }
 @media (max-width: 400px){
-  .header{
-    background-position-x: -860px;
-  }
+  // .header{
+  //   background-position-x: -860px;
+  // }
+  .menu {
+    font-size: 12px;
+  }  
+  .header__trustReg {
+    font-size: 12px;
+  }  
 }

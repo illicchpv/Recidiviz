@@ -37,3 +37,13 @@ body{
   padding-right: var(--contentInnerPadX);
   position: relative;
 }
+
+// blocks
+.button{
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.53846; /* 153.846% */
+  letter-spacing: 0.02px;
+  border-radius: 80px;
+}

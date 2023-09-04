@@ -34,4 +34,13 @@ body {
   padding-left: var(--contentInnerPadX);
   padding-right: var(--contentInnerPadX);
   position: relative;
+}
+
+.button {
+  text-decoration: none;
+  text-align: center;
+  font-size: 13px;
+  line-height: 1.53846; /* 153.846% */
+  letter-spacing: 0.02px;
+  border-radius: 80px;
 }/*# sourceMappingURL=01_root.css.map */

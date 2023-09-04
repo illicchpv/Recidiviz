@@ -2,6 +2,10 @@
   background: #001414;
 }
 
+.container_footer {
+  display: block;
+}
+
 .footer__top {
   padding-top: 112px;
   padding-bottom: 137px;
