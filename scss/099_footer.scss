@@ -1,77 +1,74 @@
-.footer {
+@import "../scss/01_mix";
+
+.footer{
   background: #001414;
 }
-
-.container_footer {
+.container_footer{
   display: block;
 }
 
-.footer__top {
+.footer__top{
   padding-top: 112px;
   padding-bottom: 137px;
 }
-
-.footer__topColumns {
+.footer__topColumns{
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  //grid-template-columns: 197px 197px 100px 1fr 173px;
+  grid-template-columns: repeat(6,1fr);
   column-gap: 32px;
 }
-
-.footer__topColumns ul {
+.footer__topColumns ul{
   padding-left: 0;
 }
-
-.footer__topColumn li {
+.footer__topColumn li{
   white-space: nowrap;
+
   list-style-type: none;
   font-size: 15px;
-  line-height: 2; /* 200% */
+  line-height: 2.0; /* 200% */
 }
-
-.footer__topColumn li:nth-child(1) {
+.footer__topColumn li:nth-child(1){
   color: #7D9798;
   font-size: 11px;
   line-height: 1.45455; /* 145.455% */
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-
-.footer__topColumn li:nth-child(2) {
+.footer__topColumn li:nth-child(2){
   color: #25B895;
   letter-spacing: -2px;
 }
 
-.footer__bottom {
+.footer__bottom{
   padding-top: 40px;
   padding-bottom: 72px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.footer__bottomImg {
+.footer__bottomImg{
   width: 24px;
   height: 24px;
 }
-
-.footer_infos {
+.footer_infos{
   text-align: right;
+
   color: #E5ECEC;
   font-size: 10px;
   line-height: 1;
 }
-
-.footer_infos div:first-child {
+.footer_infos div:first-child{
   margin-bottom: 8px;
 }
+@media (max-width: 640px){ // перестраиваем гриды в header и footer
 
-@media (max-width: 640px) {
-  .footer__topColumnSpace {
+  .footer__topColumnSpace{
     display: none;
   }
-  .footer__topColumns {
-    grid-template-columns: repeat(2, 1fr);
+  .footer__topColumns{
+    grid-template-columns: repeat(2,1fr);
   }
+
   /*
   .header__hLine_h{
     display: block;
@@ -84,5 +81,3 @@
   }
   */
 }
-
-/*# sourceMappingURL=09_footer.css.map */

@@ -63,6 +63,13 @@ h1, h2, h3, p, fieldset {
   position: relative;
 }
 
+.temp {
+  height: 10vh;
+  color: red;
+  font-size: 50px;
+  text-align: center;
+}
+
 .button {
   text-decoration: none;
   text-align: center;
@@ -72,4 +79,4 @@ h1, h2, h3, p, fieldset {
   border-radius: 80px;
 }
 
-/*# sourceMappingURL=01_root.css.map */
+/*# sourceMappingURL=000_root.css.map */
