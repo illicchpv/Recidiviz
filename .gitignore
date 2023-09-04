@@ -5,6 +5,8 @@
 /.vscode
 /node_modules
 
+/css/00_hide.css
+
 # ??? /src/*css*/*.scss
 # ??? /src/*css*/*.map
 

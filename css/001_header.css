@@ -18,9 +18,15 @@
 }
 
 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: last baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: last baseline;
+      -ms-flex-align: last baseline;
+          align-items: last baseline;
 }
 
 .nav ul {
@@ -37,9 +43,15 @@
 
 .menu {
   font-size: 13px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 51px;
 }
 
@@ -86,7 +98,9 @@
 .header__trustTable {
   margin-top: 33px;
   display: grid;
-  column-gap: 32px;
+  -webkit-column-gap: 32px;
+     -moz-column-gap: 32px;
+          column-gap: 32px;
   row-gap: 17px;
   grid-template-columns: repeat(6, 1fr);
 }
@@ -124,9 +138,16 @@
 }
 @media (max-width: 700px) {
   .nav {
-    flex-direction: column;
-    justify-content: unset;
-    align-items: unset;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
     gap: 16px;
   }
   .menu {
