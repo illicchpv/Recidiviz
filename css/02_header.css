@@ -63,13 +63,12 @@
 
 .header__text {
   margin-top: 29px;
-  margin-bottom: 46px;
   font-size: 18px;
   line-height: 1.5556; /* 155.556% */
 }
 
 .button_header {
-  margin-top: 46px;
+  margin-top: 29px;
   color: white;
   padding: 17px 33px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -87,8 +86,7 @@
 .header__trustTable {
   margin-top: 33px;
   display: grid;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
   row-gap: 17px;
   grid-template-columns: repeat(6, 1fr);
 }
@@ -126,10 +124,10 @@
 }
 @media (max-width: 700px) {
   .nav {
-    display: flex;
     flex-direction: column;
     justify-content: unset;
     align-items: unset;
+    gap: 16px;
   }
   .menu {
     gap: 5px;
@@ -158,4 +156,6 @@
   .header__trustReg {
     font-size: 12px;
   }
-}/*# sourceMappingURL=02_header.css.map */
+}
+
+/*# sourceMappingURL=02_header.css.map */

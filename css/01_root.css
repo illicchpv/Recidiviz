@@ -1,6 +1,6 @@
 :root {
-  --containerW: 1152px;
-  --contentInnerPadX: 5px;
+  --containerW: 1170px;
+  --contentInnerPadX: 6px;
   --transTime: 0.3s;
   --txtColor: #000;
   --txtHdrColor: #004DC0;
@@ -27,6 +27,33 @@ body {
   color: #FFF;
 }
 
+h1, h2, h3, h4 {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, p, fieldset {
+  margin: 0;
+}
+
 .container {
   margin: 0 auto;
   max-width: var(--containerW);
@@ -43,4 +70,6 @@ body {
   line-height: 1.53846; /* 153.846% */
   letter-spacing: 0.02px;
   border-radius: 80px;
-}/*# sourceMappingURL=01_root.css.map */
+}
+
+/*# sourceMappingURL=01_root.css.map */

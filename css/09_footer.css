@@ -14,8 +14,7 @@
 .footer__topColumns {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
 }
 
 .footer__topColumns ul {
@@ -84,4 +83,6 @@
     display: none;
   }
   */
-}/*# sourceMappingURL=09_footer.css.map */
+}
+
+/*# sourceMappingURL=09_footer.css.map */
