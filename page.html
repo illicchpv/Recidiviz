@@ -21,47 +21,65 @@
       box-sizing: border-box;
       scroll-behavior: smooth;
     }
-    *, *:before, *:after {
+
+    *,
+    *:before,
+    *:after {
       box-sizing: inherit;
     }
+
     body {
       font-family: 'Public Sans', sans-serif;
       font-weight: 400;
       color: #FFF;
     }
-    h1,    h2,    h3,    h4 {      margin: 0;    }
-    a {      display: inline-block;      text-decoration: none;      color: inherit;    }
-    ul {      margin: 0;      padding: 0;      list-style: none;    }
-    h1,    h2,    h3,    p,    fieldset {      margin: 0;    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      margin: 0;
+    }
+
+    a {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    p,
+    fieldset {
+      margin: 0;
+    }
   </style>
 
+  <style>
+    .container {
+      max-width: 400px;
+      /* padding: 0.1px 0; */
+      /* border: 0.001px solid red; */
+      background-color: lightgrey;
+    }
+
+    .text1 {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+  </style>
+  <div class="container">
+    <div class="text1">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore rem quam magnam doloremque
+    </div>
+  </div>
 </body>
 
-<style>
-  .bg{
-    background-image: url(img/bg.jpg);    background-repeat: no-repeat;    background-size: cover;    background-position: center;
-  }
-  .container{
-    max-width: 1152px;
-    margin: 0 auto;
-    padding: 0.1px 0;
-  }
-  .text1{
-    margin-top: 100px;
-    margin-bottom: 100px;
-
-    font-family: 'Libre Baskerville', serif;
-    font-size: 38px;
-    line-height: 1.15789; /* 115.789% */
-    letter-spacing: 1.2px;    
-    max-width: 542px;
-  }
-</style>
-<div class="bg">
-  <div class="container">
-    <p class="text1">
-      Every person who safely transitions back to the community is a step toward a better society.
-    </p>
-  </div>
-</div>
 </html>
